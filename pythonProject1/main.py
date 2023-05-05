@@ -21,42 +21,33 @@ def normal(p,q,r):
         n = numerator/denominator
         return n
 
+def line(p,q,t):
+    # p(t) = p + t(v)
+    v = np.sub(q,p)
+
+def IntersectingTriangle(v1,v2,plane):
+
+    num = np.dot(np.subtract(0,v1.ravel()),plane)
+    denom = np.dot(np.subtract(v2.ravel(),v1.ravel()),plane)
+    t = num/denom
+    #print(t)
+    #print(v1.ravel(),"  ",v2.ravel())
+    x = v1 - np.multiply(t,np.subtract(v2,v1))
+    #print(x[0]," ",x[1], " ",x[2])
+    #print(plane)
+    A = np.array([plane[1] - plane[0],plane[2] - plane[0],-np.subtract(v2,v1)])
+    b = (np.subtract(v1.ravel(),v2.ravel()))
+    print(A)
+    print(b)
+    u = np.linalg.lstsq(A,b,rcond=None)[0]
+    u1 = u[1]
+    u2 = u[2]
 
 
-def Vin(e,c):
-    v = (np.subtract(e,c))/(np.linalg.norm(np.subtract(e,c)))
-    return v
-
-def lightIntensity(light,centroid,v,w):
-    l = np.subtract(centroid,light)
-    n = np.cross(v,w)
-
-    lightIntensity = np.dot(n,l)/(np.linalg.norm(n) * np.linalg.norm(l))
-    lightIntensity = "{:.4f}".format(lightIntensity)
-
-    return lightIntensity
 
 
-def paralellProjection(x,n,v):
-    I = np.eye(3)
-    q = np.array([[1],[0],[0]])
-    #print(v,"  \n ",n)
-    x1 = np.negative(x)
-    try:
-        vdotn = np.dot(v.ravel(), n.ravel())
-        if vdotn == 0 or np.isnan(vdotn):
-            print("Invalid computation: vdotn is zero or NaN")
-        else:
-            left_side = (np.divide((np.dot(v, n.T)), vdotn))
-            denominator = np.dot(v.ravel(), n.ravel())
-            if denominator == 0 or np.isnan(denominator):
-                print("Invalid computation: denominator is zero or NaN")
-            else:
-                right_side = ((np.dot(q.ravel(), n.ravel())) / denominator) * v
-                xPrime = (np.dot((np.subtract(I, left_side)), x1)) + right_side
-                print(xPrime.ravel())
-    except Exception:
-        print("invalid computation")
+
+
 
 
 
@@ -64,18 +55,17 @@ def main(lines):
     p = np.array([[lines[0][0]], [lines[0][1]], [lines[0][2]]])
     q = np.array([[lines[0][3]], [lines[0][4]], [lines[0][5]]])
     r = np.array([[lines[0][6]], [lines[0][7]], [lines[0][8]]])
-    paralellProjection(p, q, r)
+
+    IntersectingTriangle(p, q, r)
 
     for line in lines[1:]:
         v1 = np.array([[line[0]], [line[1]], [line[2]]])
         v2= np.array([[line[3]], [line[4]], [line[5]]])
         v3 = np.array([[line[6]], [line[7]], [line[8]]])
-        try:
-            paralellProjection(p, q, v1)
-            paralellProjection(p, q, v2)
-            paralellProjection(p, q, v3)
-        except Exception:
-            print("Invalid computation")
+        IntersectingTriangle(p,q,v1)
+        IntersectingTriangle(p, q, v2)
+        IntersectingTriangle(p, q, v3)
+
 
 lines = parseFile(0)
 

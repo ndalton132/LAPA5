@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b76b344-e20a-42b6-a6e8-9b25fc19950c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Part_A/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject1/.idea/pythonProject1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../pythonProject1/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Input_Files/class_input_2-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Input_Files/class_input_2-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/partBstuf.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-    </list>
+    <list default="true" id="7b76b344-e20a-42b6-a6e8-9b25fc19950c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

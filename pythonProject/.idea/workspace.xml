@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="535ce472-c1fa-4a4a-a43d-626aefcdc7e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Part_A/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject1/.idea/pythonProject1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pythonProject1/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Input_Files/class_input_2-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Input_Files/class_input_2-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part_B/partBstuf/.idea/partBstuf.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Part_B/partBstuf/main.py" beforeDir="false" />
-    </list>
+    <list default="true" id="535ce472-c1fa-4a4a-a43d-626aefcdc7e2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683148804247</updated>
       <workItem from="1683148807602" duration="1476000" />
-      <workItem from="1683155346796" duration="11870000" />
+      <workItem from="1683155346796" duration="11876000" />
     </task>
     <servers />
   </component>

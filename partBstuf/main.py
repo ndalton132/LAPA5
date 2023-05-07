@@ -34,6 +34,7 @@ def main(lines):
     r = np.array([lines[0][6], lines[0][7], lines[0][8]])
 
     for line in lines[1:]:
+
         v1 = np.array([line[0], line[1], line[2]])
         v2= np.array([line[3], line[4], line[5]])
         v3 = np.array([line[6], line[7],line[8]])
@@ -49,13 +50,12 @@ main(lines)
 
 
 
-# with open("C:\\Users\\nickd\\OneDrive\\Pictures\\Screenshots\\School\\LinearAlgebraPA5\\Part_B\\PartBOutput\\ndalton_output_B_1.txt", 'w') as f:
-#     lines = parseFile(3)
-#     lines.pop()
-#
-#     sys.stdout = f
-#
-#     main(lines)
-#
-#     sys.stdout = sys.__stdout__
+with open("C:\\Users\\nickd\\OneDrive\\Pictures\\Screenshots\\School\\LinearAlgebraPA5\\Part_B\\PartBOutput\\ndalton_output_B_1.txt", 'w') as f:
+    lines = parseFile(1)
+
+    sys.stdout = f
+
+    main(lines)
+
+    sys.stdout = sys.__stdout__
 

@@ -1,7 +1,5 @@
 import sys
 import numpy as np
-import sys
-import numpy as np
 def parseFile(fileNum):
     with open("C:\\Users\\nickd\\OneDrive\\Pictures\\Screenshots\\School\\LinearAlgebraPA5\\Input_Files\\class_input_"+ str(fileNum) + "-2.txt") as file:
         input = file.readlines()
@@ -16,6 +14,7 @@ def paralellProjection(q,n,v,x):
     # v = np.array([0,0,1])
     # n = np.array([1,1,1])
     # q = np.array([1,0,0])
+    v = -x
 
     vdotn = np.dot(v, n)
     if vdotn == 0 or np.isnan(vdotn):
@@ -43,22 +42,20 @@ def main(lines):
 
 
 
-#lines = parseFile(2)
+lines = parseFile(2)
 
 #print(lines)
-#main(lines)
+main(lines)
 
 
 
-with open("C:\\Users\\nickd\\OneDrive\\Pictures\\Screenshots\\School\\LinearAlgebraPA5\\Part_A\\PartAOutput\\ndalton_output_A_3.txt", 'w') as f:
-    lines = parseFile(3)
-
-
-    sys.stdout = f
-
-    main(lines)
-
-    sys.stdout = sys.__stdout__
-
-
+# with open("C:\\Users\\nickd\\OneDrive\\Pictures\\Screenshots\\School\\LinearAlgebraPA5\\Part_B\\PartBOutput\\ndalton_output_B_1.txt", 'w') as f:
+#     lines = parseFile(3)
+#     lines.pop()
+#
+#     sys.stdout = f
+#
+#     main(lines)
+#
+#     sys.stdout = sys.__stdout__
 
